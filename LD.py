@@ -189,6 +189,10 @@ if __name__ == '__main__':
     import numpy as np
 
     lamda = np.linspace(200E-9, 2000E-9, 300)  # Creates a wavelength vector from 300 nm to 1000 nm of length 100
-    gold = LD(lamda, material='Ag', model='LD')
-    gold.plot_epsilon()
-    gold.plot_n_k()
+    silver = LD(lamda, material='Ag', model='LD')
+    print silver.epsilon_real
+    print silver.epsilon_imag
+    print silver.n
+    print silver.k
+    silver.plot_epsilon()
+    silver.plot_n_k()
