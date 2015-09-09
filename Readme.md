@@ -14,6 +14,7 @@
 
 ##Example:
  To use in other python files
+ 
         from LD import LD # Make sure the file is accessible to PYTHONPATH or in the same directory of file which is trying to import
         import numpy as np
         lamda = np.linspace(300E-9,1000E-9,100) # Creates a wavelength vector from 300 nm to 1000 nm of length 100
